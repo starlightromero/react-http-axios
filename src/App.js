@@ -1,15 +1,15 @@
-import React, { Component } from 'react';
+import React, { Component } from 'react'
 
-import Blog from './containers/Blog/Blog';
+import Blog from './Containers/Blog/Blog'
 
 class App extends Component {
-  render() {
+  render () {
     return (
-      <div className="App">
+      <div className='App'>
         <Blog />
       </div>
-    );
+    )
   }
 }
 
-export default App;
+export default App
