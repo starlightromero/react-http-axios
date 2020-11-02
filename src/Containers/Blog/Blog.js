@@ -4,7 +4,7 @@ import axios from 'axios'
 import Post from '../../Components/Post/Post'
 import FullPost from '../../Components/FullPost/FullPost'
 import NewPost from '../../Components/NewPost/NewPost'
-import './Blog.module.css'
+import classes from './Blog.module.css'
 
 class Blog extends Component {
   state = {
@@ -36,7 +36,7 @@ class Blog extends Component {
     })
     
     return (<div>
-      <section className='Posts'>
+      <section className={classes.Blog}>
         {posts}
       </section>
       <section>

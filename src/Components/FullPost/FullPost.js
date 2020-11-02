@@ -1,7 +1,6 @@
 import React, { Component } from 'react'
 import axios from 'axios'
-
-import './FullPost.module.css'
+import classes from './FullPost.module.css'
 
 class FullPost extends Component {
   state = {
@@ -26,7 +25,7 @@ class FullPost extends Component {
     }
     if (loadedPost) {
       post = (
-        <div className='FullPost'>
+        <div className={classes.FullPost}>
           <h1>{loadedPost.title}</h1>
           <p>{loadedPost.body}</p>
           <div className='Edit'>
