@@ -40,17 +40,19 @@ class Blog extends Component {
       })
     }
     
-    return (<div>
-      <section className={classes.Posts}>
-        {posts}
-      </section>
-      <section>
-        <FullPost id={this.state.selectedPostId} />
-      </section>
-      <section>
-        <NewPost />
-      </section>
-    </div>)
+    return (
+      <div>
+        <section className={classes.Posts}>
+          {posts}
+        </section>
+        <section>
+          <FullPost id={this.state.selectedPostId} />
+        </section>
+        <section>
+          <NewPost />
+        </section>
+      </div>
+    )
   }
 }
 
