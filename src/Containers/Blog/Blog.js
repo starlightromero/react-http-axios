@@ -41,7 +41,7 @@ class Blog extends Component {
     }
     
     return (<div>
-      <section className={classes.Blog}>
+      <section className={classes.Posts}>
         {posts}
       </section>
       <section>
