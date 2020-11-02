@@ -7,7 +7,7 @@ class FullPost extends Component {
     loadedPost: null
   }
 
-  comonentDidUpdate () {
+  componentDidUpdate () {
     if (this.props.id) {
       if (!this.state.loadedPost || (this.state.loadedPost && this.state.loadedPost.id !== this.props.id)) {        
         axios.get(`posts/${this.props.id}`).then(response => {
@@ -34,8 +34,8 @@ class FullPost extends Component {
         <div className={classes.FullPost}>
           <h1>{loadedPost.title}</h1>
           <p>{loadedPost.body}</p>
-          <div className='Edit'>
-            <button onClick={this.deletePostHandler} className='Delete'>
+          <div className={classes.Edit}>
+            <button onClick={this.deletePostHandler} className={classes.Delete}>
               Delete
             </button>
           </div>
